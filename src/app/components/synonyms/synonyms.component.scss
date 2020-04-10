@@ -1,0 +1,25 @@
+
+:host{
+  display: flex;
+    width: 150px;
+    max-height: 90vh;
+    flex-direction: column;
+    background-color: rgba(33, 33, 33, 0.5);
+    overflow-y: auto;
+    margin: 5px 0px;
+}
+
+h4{
+    color:white;
+    text-align: center;
+  }
+  
+  .synonyms__btn{
+    background:none;
+    color:white;
+    margin:5px;
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+    outline: none;
+  }

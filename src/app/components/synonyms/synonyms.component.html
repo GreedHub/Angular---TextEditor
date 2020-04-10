@@ -1,0 +1,3 @@
+
+  <h4>Synonyms</h4>
+  <button class="synonyms__btn" *ngFor="let synonym of synonyms | slice:0:25;" (click)="setSynonym(synonym.word)">{{synonym.word}}</button>

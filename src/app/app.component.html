@@ -1,8 +1,11 @@
 <app-header [title]="title"></app-header>
 
 <main>
-  <app-control-panel></app-control-panel>
-  <app-file></app-file>
+  <app-control-panel (toggleStyleEmitter)="file.toggleTag($event)"></app-control-panel>
+  <div class="main__body">
+    <app-file #file (wordEmitter)="synonyms.getSynonyms($event)"></app-file>
+    <app-synonyms #synonyms (synonymEmitter)="file.replaceSynonym($event)"></app-synonyms>
+  </div>
 </main>
 
 <app-footer></app-footer>

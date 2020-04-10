@@ -7,6 +7,10 @@ import { HeaderComponent } from './header/header.component';
 import { FormsModule } from '@angular/forms';
 import { TextService } from './text-service/text.service';
 import { FooterComponent } from './footer/footer.component';
+import { TextSelectDirective } from './directives/text-select.directive';
+import { HttpClientModule } from '@angular/common/http';
+import { SynonymsComponent } from './components/synonyms/synonyms.component'; 
+
 
 @NgModule({
   declarations: [
@@ -14,11 +18,14 @@ import { FooterComponent } from './footer/footer.component';
     FileComponent,
     ControlPanelComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    TextSelectDirective,
+    SynonymsComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [
     TextService

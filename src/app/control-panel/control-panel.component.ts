@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-control-panel',
@@ -7,4 +7,10 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ControlPanelComponent {
+
+  @Output() toggleStyleEmitter = new EventEmitter();
+
+  toggleStyle(tagName:string){
+    this.toggleStyleEmitter.emit(tagName);
+  }
 }

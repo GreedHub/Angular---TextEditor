@@ -1,3 +1,1 @@
-<div class="file">
-  {{text$ | async}}
-</div>
+<div class="file" (textSelect)="onWordSelection( $event )" [innerHTML]="text$ | async" contenteditable="true"></div>

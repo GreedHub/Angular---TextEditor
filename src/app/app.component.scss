@@ -10,4 +10,12 @@ main {
   flex-direction: column;
   flex-grow: 1;
   overflow-y: auto;
+
+  .main__body{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-grow: 1;
+  }
 }
+
